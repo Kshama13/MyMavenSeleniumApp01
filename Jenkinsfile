@@ -24,17 +24,16 @@ pipeline {
             }
         }
 
-        stage('Run Application') {
-            steps {
-                sh '''
-                echo "Listing target folder:"
-                ls -l target
-
-                echo "Running correct jar..."
-                java -jar target/MyMavenSeleniumApp01-1.0-SNAPSHOT.jar
-                '''
-            }
-        }
+        //stage('Run Application') {
+        //  steps {
+          //      sh '''
+            //    echo "Listing target folder:"
+              //  ls -l target
+//                echo "Running correct jar..."
+  //              java -jar target/MyMavenSeleniumApp01-1.0-SNAPSHOT.jar
+    //            '''
+      //      }
+       // }
     }
 
     post {
